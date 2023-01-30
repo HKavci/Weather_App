@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: blueviolet;
+}
+
+/* #img {
+    width: 12rem;
+    margin-top: 2.5rem;
+
+} */
+
+.baslik h1 {
+    font-size: 3rem;
+    margin-top: 3.5rem;
+}
+
+#input {
+    padding: 0.5rem;
+    width: 15rem;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+#btn {
+    padding: 0.5rem;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.city-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: 2.5rem;
+}
+
+.city-weather {
+    list-style-type: none;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    background-color: indianred;
+    text-align: center;
+    color: white;
+}
+
+.city-name {
+    margin-top: 1rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+}
