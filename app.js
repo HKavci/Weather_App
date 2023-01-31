@@ -25,7 +25,7 @@ input.addEventListener("keydown", (e) => {
 const API_KEY = "b57eb3897ee43736a71e86a7d7f99e3d"
 
 const getWeatherInfo = async () => {
-    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=tr`
     
     try {
         const response = await fetch(URL)
