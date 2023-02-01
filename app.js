@@ -1,5 +1,6 @@
 const input = document.getElementById("input")
 const button = document.getElementById("btn")
+const alarm = document.querySelector(".alert")
 let city;
 
 window.addEventListener("load", ()=>{
@@ -37,7 +38,9 @@ const getWeatherInfo = async () => {
         console.log(data);
         renderInfo(data)
     } catch (error) {
-        console.log(error);
+            alarm.innerHTML = `"${city}" adında bir şehir bulunamadı!..`
+       
+        // console.log(error);
     }
 }
 
@@ -46,9 +49,9 @@ let cities = []
 
 const renderInfo = (data) => {
     const temperature = Math.round(data.main.temp - 273.15)
-    console.log(temperature)
-
     let cityName = data.name
+
+    alarm.innerHTML = ""
     
     if (data.name.endsWith(" Province")) {
         cityName = data.name.replace(" Province", "")
